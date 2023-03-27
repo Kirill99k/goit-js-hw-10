@@ -7,14 +7,98 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
   color: #212121;
+  font-size: 24px;
   line-height: 1.5;
+  background: linear-gradient(90deg, #c9d6ff, #e2e2e2);
+}
+
+li {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 #search-box {
   font: inherit;
+  text-align: center;
   padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #6674a0;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 8px 6px -6px #000;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #414156;
+}
+
+.wrap {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.btn-clear {
+  width: 220px;
+  height: 50px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: #f8f9fa;
+  padding: 0 32px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #36395a;
+  box-shadow: 0 8px 6px -6px #000;
+}
+
+.btn-clear:hover {
+  box-shadow: 0 8px 6px -6px #000;
+  transform: all 0.2s;
+}
+
+.btn-clear:active {
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: all 0.2s;
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.country-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.country-info__img {
+  width: max-content;
+  box-shadow: 0 8px 6px -6px #000;
 }
